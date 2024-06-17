@@ -1,4 +1,3 @@
-// src/components/RandomVerse.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container, Row, Col, Card, Button, Spinner } from 'react-bootstrap';
