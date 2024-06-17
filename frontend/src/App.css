@@ -1,3 +1,5 @@
+/* src/App.css */
+
 body {
 	background: linear-gradient(to bottom, #e0f7fa, #ffffff);
 	font-family: 'Roboto', sans-serif;
@@ -6,12 +8,15 @@ body {
 	align-items: center;
 	height: 100vh;
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 h1 {
 	font-weight: 700;
 	font-size: 2.5em;
 	color: #007bff;
+	text-align: center;
 }
 
 .card {
@@ -19,6 +24,7 @@ h1 {
 	border-radius: 15px;
 	border: none;
 	background: #f8f9fa;
+	padding: 20px;
 }
 
 .btn-primary {
@@ -26,8 +32,78 @@ h1 {
 	border: none;
 	border-radius: 50px;
 	padding: 10px 20px;
+	font-size: 1.2em;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-primary svg {
+	margin-right: 8px;
 }
 
 .btn-primary:hover {
 	background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+	h1 {
+		font-size: 1.8em;
+	}
+
+	.card {
+		padding: 15px;
+	}
+
+	.btn-primary {
+		font-size: 1em;
+		padding: 8px 16px;
+	}
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+	h1 {
+		font-size: 2.2em;
+	}
+
+	.card {
+		padding: 18px;
+	}
+
+	.btn-primary {
+		font-size: 1.1em;
+		padding: 9px 18px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	h1 {
+		font-size: 2.4em;
+	}
+
+	.card {
+		padding: 20px;
+	}
+
+	.btn-primary {
+		font-size: 1.2em;
+		padding: 10px 20px;
+	}
+}
+
+@media (min-width: 993px) {
+	h1 {
+		font-size: 2.5em;
+	}
+
+	.card {
+		padding: 25px;
+	}
+
+	.btn-primary {
+		font-size: 1.2em;
+		padding: 10px 20px;
+	}
 }

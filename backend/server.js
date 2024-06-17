@@ -6,7 +6,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const axiosRetry = require('axios-retry').default;
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 const SURAH_URL = process.env.SURAH_URL;
 
 const app = express();
