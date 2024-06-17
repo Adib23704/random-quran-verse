@@ -45,10 +45,10 @@ const RandomVerse = () => {
 							) : (
 								<Card.Body>
 									<Card.Title className="mb-3">{verse.surah} - Verse {verse.index}</Card.Title>
-									<Card.Text className="mb-4" style={{ fontSize: '1.2em' }}>
-										"{verse.arabic}"
+									<Card.Text className="mb-4 arabic">
+										{verse.arabic}
 									</Card.Text>
-									<Card.Text className="text-muted">
+									<Card.Text className="fw-medium">
 										<em>{verse.english}</em>
 									</Card.Text>
 								</Card.Body>

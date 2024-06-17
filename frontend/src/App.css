@@ -47,6 +47,15 @@ h1 {
 	background-color: #0056b3;
 }
 
+.arabic {
+	font-family: "Noto Sans Arabic", sans-serif;
+	font-size: 1.5em;
+	direction: rtl;
+	margin-bottom: 15px;
+	line-height: 1.5;
+	text-align: center;
+}
+
 /* Responsive design */
 @media (max-width: 576px) {
 	h1 {
