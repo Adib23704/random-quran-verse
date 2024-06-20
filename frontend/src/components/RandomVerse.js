@@ -13,7 +13,8 @@ const RandomVerse = () => {
 		setLoading(true);
 		setError(null);
 		try {
-			const response = await axios.get('http://localhost:5000/random-verse');
+			console.log(process.env.REACT_APP_BACKEND_URL);
+			const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/random-verse`);
 			setVerse(response.data);
 		} catch (error) {
 			setError('Failed to fetch verse');
